@@ -9,7 +9,7 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        /*private void OnCounterClicked(object sender, EventArgs e)
         {
             count++;
 
@@ -19,11 +19,16 @@
                 CounterBtn.Text = $"Clicked {count} times";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
-        }
+        }*/
 
-        private void ROLARDADOBtn_Clicked(object sender, EventArgs e)
+
+        private void rolardadoBtn_Clicked(object sender, EventArgs e)
         {
-
+            int n = Convert.ToInt32(LadosPicker.SelectedItem);
+            int valor;
+            Random rnd = new();
+            valor = rnd.Next(1, n + 1);
+            NumeroSorteadoLabel.Text = Convert.ToString(valor);
         }
     }
 

@@ -9,7 +9,7 @@
             Spacing="25">
 
             <Label
-                Text="ROLADOR DE DADOS"
+                Text="rolador de dados"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
@@ -19,8 +19,8 @@
                 Style="{StaticResource SubHeadline}"/>
 
             <Picker
-                x:name = "LadosPicker"
-                title ="Lados">
+                x:Name = "LadosPicker"
+                Title ="Lados">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>4</x:String>
@@ -33,9 +33,9 @@
             </Picker>
 
             <Button
-                x:Name="ROLARDADOBtn"
+                x:Name="rolardadoBtn"
                 Text="Click me" 
-                Clicked="ROLARDADOBtn_Clicked"/>
+                Clicked="rolardadoBtn_Clicked"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
